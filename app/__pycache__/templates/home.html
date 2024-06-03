@@ -1,0 +1,18 @@
+<!-- image_downloader/templates/image_downloader/home.html -->
+<!-- app/templates/app/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Downloader</title>
+</head>
+<body>
+    <h1>Image Downloader</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
